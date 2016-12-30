@@ -2,6 +2,7 @@
  * Created by nalantianyi on 2016/12/29.
  */
 var path = require('path');
+var webpack=require('webpack');
 
 module.exports = {
     entry: './src/index.js',
@@ -19,5 +20,13 @@ module.exports = {
                 loader: 'babel'
             }
         ]
-    }
-};
+    },
+    // plugins: [
+    //     new webpack.optimize.UglifyJsPlugin({
+    //         compress: {
+    //             warnings: false
+    //         }
+    //     })
+    // ]
+}
+;
