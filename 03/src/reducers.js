@@ -21,7 +21,7 @@ function posts(state = {
 }, action) {
     switch (action.type) {
         case INVALIDTAE_SUBREDDIT:
-            return {...state, didInvalidate: false};
+            return {...state, didInvalidate: true};
         case REQUEST_POST:
             return {
                 ...state,
