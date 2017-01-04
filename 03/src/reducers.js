@@ -7,7 +7,7 @@ import {
     REQUEST_POST, RECEIVE_POSTS
 } from './actions';
 
-function selectedsubreddit(state = 'reactjs', action) {
+function selectedSubreddit(state = 'reactjs', action) {
     switch (action.type) {
         case SELECT_SUBREDDIT:
             return action.subreddit;
@@ -51,5 +51,5 @@ function postsBySubreddit(state = {}, action) {
             return state;
     }
 }
-const rootReducer = combineReducers({postsBySubreddit, selectedsubreddit});
+const rootReducer = combineReducers({postsBySubreddit, selectedSubreddit});
 export default rootReducer;
